@@ -98,9 +98,6 @@ class VistaIngredientes: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
-    tableview
-    
-    
     
     
     override func viewDidLoad() {
