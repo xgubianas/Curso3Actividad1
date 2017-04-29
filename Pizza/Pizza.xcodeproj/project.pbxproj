@@ -16,6 +16,7 @@
 		046935AF1EB3EA9500F4FCA2 /* VistaQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046935AE1EB3EA9500F4FCA2 /* VistaQueso.swift */; };
 		046935B11EB3EAA600F4FCA2 /* VistaIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046935B01EB3EAA600F4FCA2 /* VistaIngredientes.swift */; };
 		046935B31EB3EABA00F4FCA2 /* VistaConfirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046935B21EB3EABA00F4FCA2 /* VistaConfirmacion.swift */; };
+		046935F11EB53D9400F4FCA2 /* VistaExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046935F01EB53D9400F4FCA2 /* VistaExtras.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		046935AE1EB3EA9500F4FCA2 /* VistaQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaQueso.swift; sourceTree = "<group>"; };
 		046935B01EB3EAA600F4FCA2 /* VistaIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaIngredientes.swift; sourceTree = "<group>"; };
 		046935B21EB3EABA00F4FCA2 /* VistaConfirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaConfirmacion.swift; sourceTree = "<group>"; };
+		046935F01EB53D9400F4FCA2 /* VistaExtras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaExtras.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				046935AE1EB3EA9500F4FCA2 /* VistaQueso.swift */,
 				046935B01EB3EAA600F4FCA2 /* VistaIngredientes.swift */,
 				046935B21EB3EABA00F4FCA2 /* VistaConfirmacion.swift */,
+				046935F01EB53D9400F4FCA2 /* VistaExtras.swift */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				046935AD1EB3EA8300F4FCA2 /* VistaMasa.swift in Sources */,
 				046935B11EB3EAA600F4FCA2 /* VistaIngredientes.swift in Sources */,
 				0469359B1EB3E8B100F4FCA2 /* AppDelegate.swift in Sources */,
+				046935F11EB53D9400F4FCA2 /* VistaExtras.swift in Sources */,
 				046935AF1EB3EA9500F4FCA2 /* VistaQueso.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
