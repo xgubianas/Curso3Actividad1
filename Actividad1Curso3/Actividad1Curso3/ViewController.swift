@@ -31,13 +31,18 @@ class ViewController: UIViewController {
         let url = NSURL(string: urls)
         let session = URLSession.shared
         let task = session.dataTask(with: url! as URL) { datos, response, error in
-            if error != nil {
+            if error != nil
+            {
                 print(error ?? "err")
             }
             else
             {
                 let text = NSString(data: datos!, encoding: String.Encoding.utf8.rawValue)
                 print (text!)
+                DispatchQueue.main.async()
+                {
+                    self.textResult.text = text! as String
+                }
             }
         }
         task.resume()
