@@ -40,6 +40,11 @@ class VistaQueso: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         seguir.isEnabled = true
+        if let cell = tableView.cellForRow(at: indexPath)
+        {
+            let queso: String = cell.textLabel?.text ?? ""
+            UserDefaults.standard.set(queso, forKey: "queso")
+        }
     }
     
     

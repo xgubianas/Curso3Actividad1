@@ -30,6 +30,12 @@ class VistaMasa: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let fila = tableView.indexPathForSelectedRow
             print(fila ?? 0)
             seguir.isEnabled = true
+            if let cell = tableView.cellForRow(at: indexPath)
+            {
+                let masa: String = cell.textLabel?.text ?? ""
+                UserDefaults.standard.set(masa, forKey: "masa")
+            }
+
         }
 
     override func viewDidLoad() {

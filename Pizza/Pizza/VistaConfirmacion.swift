@@ -10,8 +10,28 @@ import UIKit
 
 class VistaConfirmacion: UIViewController {
 
+    @IBOutlet var tamano: UILabel!
+    @IBOutlet var masa: UILabel!
+    @IBOutlet var queso: UILabel!
+    @IBOutlet var extras: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let savedValue = UserDefaults.standard.string(forKey: "tamano"){
+            tamano.text = savedValue
+        }
+        if let savedValue = UserDefaults.standard.string(forKey: "masa"){
+            masa.text = savedValue
+        }
+
+        if let savedValue = UserDefaults.standard.string(forKey: "queso"){
+            queso.text = savedValue
+        }
+
+        if let savedValue = UserDefaults.standard.string(forKey: "extras"){
+            extras.text = savedValue
+        }
 
         // Do any additional setup after loading the view.
     }

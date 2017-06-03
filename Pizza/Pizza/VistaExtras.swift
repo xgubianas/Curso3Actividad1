@@ -41,6 +41,11 @@ class VistaExtras: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         seguir.isEnabled = true
+        if let cell = tableView.cellForRow(at: indexPath)
+        {
+            let extras: String = cell.textLabel?.text ?? ""
+            UserDefaults.standard.set(extras, forKey: "extras")
+        }
     }
     
     

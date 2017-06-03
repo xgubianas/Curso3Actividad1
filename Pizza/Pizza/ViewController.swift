@@ -28,8 +28,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            
+        
         seguir.isEnabled = true
+        if let cell = tableView.cellForRow(at: indexPath)
+        {
+            let tamano: String = cell.textLabel?.text ?? ""
+            UserDefaults.standard.set(tamano, forKey: "tamano")
+            print (cell)
+            //NSIndexPath *selectedIndexPath = [tableView .indexPathForSelectedRow]
+        }
+        
     }
     
     override func viewDidLoad() {
